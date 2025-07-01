@@ -43,6 +43,13 @@
           <url>https://maven.pkg.github.com/RegioneER/parer-sintesi-classi-errore-versamenti-falliti</url>
         </repository>      
     </distributionManagement>
+
+	<repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/RegioneER/parer-framework-parerpom</url>           
+        </repository>          
+     </repositories>
 	
 	<dependencyManagement>
 		<dependencies>
