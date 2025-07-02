@@ -5,7 +5,6 @@
 	<version>1.2.1-SNAPSHOT</version>
 	<name>sintesi-classi-errore-versamenti-falliti</name>
 	<description>Progetto api per restituzione delle classi di errore dei versamenti falliti</description>
-	<url>https://nexus.ente.regione.emr.it/repository/parer-site/sintesi-classi-errore-versamenti-falliti/${project.version}/</url>
 
 	<parent>
 		<groupId>it.eng.parer</groupId>
@@ -31,20 +30,20 @@
 		<idp-jaas-rdbms.version>0.0.9</idp-jaas-rdbms.version>
 	</properties>
 
-	<scm>
+<scm>
 		<developerConnection>
 			scm:git:https://github.com/RegioneER/parer-sintesi-classi-errore-versamenti-falliti.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
-	<distributionManagement>
+<distributionManagement>
         <repository>
           <id>github</id>
           <url>https://maven.pkg.github.com/RegioneER/parer-sintesi-classi-errore-versamenti-falliti</url>
         </repository>      
     </distributionManagement>
 
-	<repositories>
+<repositories>
         <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com/RegioneER/parer-framework-parerpom</url>           
