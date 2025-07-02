@@ -1,0 +1,67 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.4'
+categories:
+  - data-collection
+  - data-visualization
+dependsOn:
+  open:
+    - name: Sintesi Classi Errore Versamenti Falliti
+      optional: false
+      version: ''
+      versionMax: ''
+      versionMin: ''
+description:
+  it:
+    features:
+      - archiviazione documentale
+    longDescription: |
+      Sintesi Classi Errore Versamenti Falliti è l'API REST che consente di ricercare classi di errore relative a versamenti falliti di una struttura SACER cui l'utente è abilitato. Se invocato opportunamente tale servizio restituisce un elenco di una o più classi di errore rappresentate mediante un codice di cui si riporta il numero di volte in cui si è presentato e l'ultima data di rilevamento.
+    shortDescription: |-
+      Modulo applicativo dedicato a funzioni di monitoraggio delle classi di errore di versamenti falliti.
+developmentStatus: stable
+intendedAudience:
+  countries:
+    - it
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: false
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+  riuso:
+    codiceIPA: r_emiro
+landingURL: 'https://github.com/RegioneER/parer-sintesi-classi-errore-versamenti-falliti'
+legal:
+  license: AGPL-3.0-or-later
+  mainCopyrightOwner: Regione Emilia-Romagna
+  repoOwner: Regione Emilia-Romagna
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: true
+logo: |-
+  https://raw.githubusercontent.com/RegioneER/parer-sintesi-classi-errore-versamenti-falliti/master/src/docs/rer-logo.png
+maintenance:
+  contacts:
+    - email: areasviluppoparer@regione.emilia-romagna.it
+      name: Cristiano Casagni
+  contractors:
+    - name: ' Engineering Ingegneria Informatica S.p.A.'
+      until: '2026-12-23'
+  type: contract
+name: Parer - Sintesi Classi Errore Versamenti Falliti
+platforms:
+  - linux
+releaseDate: '2023-11-13'
+softwareType: standalone/backend
+url: 'https://github.com/RegioneER/parer-sintesi-classi-errore-versamenti-falliti.git'
+applicationSuite: SACER
