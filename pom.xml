@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>sintesi-classi-errore-versamenti-falliti</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.1-SNAPSHOT</version>
 	<name>sintesi-classi-errore-versamenti-falliti</name>
 	<description>Progetto api per restituzione delle classi di errore dei versamenti falliti</description>
 
@@ -33,7 +33,7 @@
 <scm>
 		<developerConnection>
 			scm:git:https://github.com/RegioneER/parer-sintesi-classi-errore-versamenti-falliti.git</developerConnection>
-		<tag>sintesi-classi-errore-versamenti-falliti-1.2.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 <distributionManagement>
