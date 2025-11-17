@@ -1,7 +1,4 @@
-## 1.2.0 (11-06-2025)
-
-### Bugfix: 1
-- [#37528](https://parermine.regione.emilia-romagna.it/issues/37528) Correzione per creazione log accesso 
+## 1.3.0 (17-11-2025)
 
 ### Novità: 1
-- [#37651](https://parermine.regione.emilia-romagna.it/issues/37651) Aggiornamento librerie obsolete primo quadrimestre 2025
+- [#39273](https://parermine.regione.emilia-romagna.it/issues/39273) Patch di sicurezza per interventi legati a CVE

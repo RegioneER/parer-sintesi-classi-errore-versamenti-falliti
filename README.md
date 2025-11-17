@@ -8,7 +8,7 @@ Fonte template redazione documento:  https://www.makeareadme.com/.
 
 # Descrizione
 
-Web service REST per la ricerca di di una o più classi di errore relative a versamenti falliti di una struttura SACER cui l'utente è abilitato. Se invocato opportunamente tale servizio restituisce un elenco di una o più classi di errore rappresentate mediante un codice di cui si riporta il numero di volte in cui si è presentato e l'ultima data di rilevamento.
+Web service REST per la ricerca di una o più classi di errore relative a versamenti falliti nell'ambito di una struttura SACER cui l'utente è abilitato. Se invocato opportunamente tale servizio restituisce un elenco di una o più classi di errore rappresentate mediante un codice, per ognuno delle quali si riporta il numero di volte in cui si è presentato e l'ultima data di rilevamento.
 
 # Installazione
 
