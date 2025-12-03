@@ -16,7 +16,6 @@ package it.eng.parer.classierrore.jpa;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -25,8 +24,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 
 /**
  * The persistent class for the VRS_UNITA_DOC_NON_VERS database table.
@@ -50,7 +47,7 @@ public class VrsUnitaDocNonVer implements Serializable {
 
     private String dsErrPrinc;
 
-    private Date dtFirstSesErr;
+    private LocalDateTime dtFirstSesErr;
 
     private LocalDateTime dtLastSesErr;
 
@@ -90,13 +87,11 @@ public class VrsUnitaDocNonVer implements Serializable {
 	return this.dsErrPrinc;
     }
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "DT_FIRST_SES_ERR")
-    public Date getDtFirstSesErr() {
+    public LocalDateTime getDtFirstSesErr() {
 	return this.dtFirstSesErr;
     }
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "DT_LAST_SES_ERR")
     public LocalDateTime getDtLastSesErr() {
 	return this.dtLastSesErr;
