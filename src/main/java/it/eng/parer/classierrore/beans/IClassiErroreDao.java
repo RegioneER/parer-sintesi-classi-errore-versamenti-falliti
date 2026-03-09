@@ -30,7 +30,7 @@ public interface IClassiErroreDao {
      *         codice di errore
      */
     Stream<CodiceErroreBean> findCodiciErrorePerVersFalliti(String nmAmbiente, String nmEnte,
-	    String nmStrut);
+            String nmStrut);
 
     /**
      * Verifica se l'utente che invoca il servizio è abilitato alla struttura per la quale richiede
@@ -43,6 +43,6 @@ public interface IClassiErroreDao {
      * @return true se l'utente è abilitato, false altrimenti
      */
     public boolean isUtenteAbilitatoStrut(String nmUserid, String nmAmbiente, String nmEnte,
-	    String nmStrut);
+            String nmStrut);
 
 }

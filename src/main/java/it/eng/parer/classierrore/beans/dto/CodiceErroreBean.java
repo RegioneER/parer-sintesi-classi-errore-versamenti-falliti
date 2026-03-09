@@ -32,37 +32,37 @@ public class CodiceErroreBean implements Serializable {
     private LocalDateTime dtLastSesErr;
 
     public CodiceErroreBean() {
-	super();
+        super();
     }
 
     public CodiceErroreBean(String cdRegistroKeyUnitaDoc, BigDecimal aaKeyUnitaDoc,
-	    String cdKeyUnitaDoc, String cdErrPrinc, LocalDateTime dtLastSesErr) {
-	super();
-	this.cdRegistroKeyUnitaDoc = cdRegistroKeyUnitaDoc;
-	this.aaKeyUnitaDoc = aaKeyUnitaDoc;
-	this.cdKeyUnitaDoc = cdKeyUnitaDoc;
-	this.cdErrPrinc = cdErrPrinc;
-	this.dtLastSesErr = dtLastSesErr;
+            String cdKeyUnitaDoc, String cdErrPrinc, LocalDateTime dtLastSesErr) {
+        super();
+        this.cdRegistroKeyUnitaDoc = cdRegistroKeyUnitaDoc;
+        this.aaKeyUnitaDoc = aaKeyUnitaDoc;
+        this.cdKeyUnitaDoc = cdKeyUnitaDoc;
+        this.cdErrPrinc = cdErrPrinc;
+        this.dtLastSesErr = dtLastSesErr;
     }
 
     public String getCdRegistroKeyUnitaDoc() {
-	return cdRegistroKeyUnitaDoc;
+        return cdRegistroKeyUnitaDoc;
     }
 
     public BigDecimal getAaKeyUnitaDoc() {
-	return aaKeyUnitaDoc;
+        return aaKeyUnitaDoc;
     }
 
     public String getCdKeyUnitaDoc() {
-	return cdKeyUnitaDoc;
+        return cdKeyUnitaDoc;
     }
 
     public String getCdErrPrinc() {
-	return cdErrPrinc;
+        return cdErrPrinc;
     }
 
     public LocalDateTime getDtLastSesErr() {
-	return dtLastSesErr;
+        return dtLastSesErr;
     }
 
 }

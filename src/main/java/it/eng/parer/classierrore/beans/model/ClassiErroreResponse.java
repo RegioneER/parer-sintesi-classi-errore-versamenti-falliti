@@ -30,32 +30,32 @@ public class ClassiErroreResponse {
     private List<ClasseErroreDto> classiErrore;
 
     public ClassiErroreResponse() {
-	super();
+        super();
     }
 
     public ClassiErroreResponse(String struttura, List<ClasseErroreDto> classiErrore,
-	    Integer totaleClassiErrore, String uri) {
-	super();
-	this.struttura = struttura;
-	this.classiErrore = classiErrore;
-	this.totale = totaleClassiErrore;
-	this.path = uri;
+            Integer totaleClassiErrore, String uri) {
+        super();
+        this.struttura = struttura;
+        this.classiErrore = classiErrore;
+        this.totale = totaleClassiErrore;
+        this.path = uri;
     }
 
     public String getPath() {
-	return path;
+        return path;
     }
 
     public Integer getTotale() {
-	return totale;
+        return totale;
     }
 
     public List<ClasseErroreDto> getClassiErrore() {
-	return classiErrore;
+        return classiErrore;
     }
 
     public String getStruttura() {
-	return struttura;
+        return struttura;
     }
 
 }

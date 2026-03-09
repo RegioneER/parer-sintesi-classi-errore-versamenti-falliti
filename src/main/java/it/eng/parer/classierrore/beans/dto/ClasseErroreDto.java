@@ -39,35 +39,35 @@ public class ClasseErroreDto implements Serializable {
     private LocalDateTime dtLastSesErr;
 
     public ClasseErroreDto() {
-	super();
+        super();
     }
 
     public ClasseErroreDto(String clErrLast, int totale, LocalDateTime dtLastSesErr) {
-	super();
-	this.clErrLast = clErrLast;
-	this.totale = totale;
-	this.dtLastSesErr = dtLastSesErr;
+        super();
+        this.clErrLast = clErrLast;
+        this.totale = totale;
+        this.dtLastSesErr = dtLastSesErr;
     }
 
     public String getClErrLast() {
-	return clErrLast;
+        return clErrLast;
     }
 
     public int getTotale() {
-	return totale;
+        return totale;
     }
 
     public LocalDateTime getDtLastSesErr() {
-	return dtLastSesErr;
+        return dtLastSesErr;
     }
 
     // Serializer personalizzato
     public static class CustomLocalDateTimeSerializer extends LocalDateTimeSerializer {
-	private static final long serialVersionUID = -2778229130488410075L;
+        private static final long serialVersionUID = -2778229130488410075L;
 
-	public CustomLocalDateTimeSerializer() {
-	    super(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
-	}
+        public CustomLocalDateTimeSerializer() {
+            super(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
+        }
     }
 
 }

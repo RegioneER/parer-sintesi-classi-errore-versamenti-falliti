@@ -59,48 +59,48 @@ public class VrsUnitaDocNonVer implements Serializable {
     @Id
     @Column(name = "ID_UNITA_DOC_NON_VERS")
     public Long getIdUnitaDocNonVers() {
-	return this.idUnitaDocNonVers;
+        return this.idUnitaDocNonVers;
     }
 
     @Column(name = "AA_KEY_UNITA_DOC")
     public BigDecimal getAaKeyUnitaDoc() {
-	return this.aaKeyUnitaDoc;
+        return this.aaKeyUnitaDoc;
     }
 
     @Column(name = "CD_ERR_PRINC")
     public String getCdErrPrinc() {
-	return this.cdErrPrinc;
+        return this.cdErrPrinc;
     }
 
     @Column(name = "CD_KEY_UNITA_DOC")
     public String getCdKeyUnitaDoc() {
-	return this.cdKeyUnitaDoc;
+        return this.cdKeyUnitaDoc;
     }
 
     @Column(name = "CD_REGISTRO_KEY_UNITA_DOC")
     public String getCdRegistroKeyUnitaDoc() {
-	return this.cdRegistroKeyUnitaDoc;
+        return this.cdRegistroKeyUnitaDoc;
     }
 
     @Column(name = "DS_ERR_PRINC")
     public String getDsErrPrinc() {
-	return this.dsErrPrinc;
+        return this.dsErrPrinc;
     }
 
     @Column(name = "DT_FIRST_SES_ERR")
     public LocalDateTime getDtFirstSesErr() {
-	return this.dtFirstSesErr;
+        return this.dtFirstSesErr;
     }
 
     @Column(name = "DT_LAST_SES_ERR")
     public LocalDateTime getDtLastSesErr() {
-	return this.dtLastSesErr;
+        return this.dtLastSesErr;
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ID_STRUT")
     public OrgStrut getOrgStrut() {
-	return this.orgStrut;
+        return this.orgStrut;
     }
 
 }

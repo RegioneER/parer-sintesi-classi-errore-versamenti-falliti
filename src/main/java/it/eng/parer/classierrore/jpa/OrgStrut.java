@@ -43,27 +43,27 @@ public class OrgStrut implements Serializable {
     @Id
     @Column(name = "ID_STRUT")
     public Long getIdStrut() {
-	return this.idStrut;
+        return this.idStrut;
     }
 
     @Column(name = "NM_STRUT")
     public String getNmStrut() {
-	return this.nmStrut;
+        return this.nmStrut;
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ID_ENTE")
 
     public OrgEnte getOrgEnte() {
-	return this.orgEnte;
+        return this.orgEnte;
     }
 
     @Column(name = "FL_CESSATO", columnDefinition = "char")
     public String getFlCessato() {
-	return this.flCessato;
+        return this.flCessato;
     }
 
     public void setFlCessato(String flCessato) {
-	this.flCessato = flCessato;
+        this.flCessato = flCessato;
     }
 }

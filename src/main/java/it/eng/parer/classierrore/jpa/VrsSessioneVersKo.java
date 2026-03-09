@@ -56,43 +56,43 @@ public class VrsSessioneVersKo implements Serializable {
     @Id
     @Column(name = "ID_SESSIONE_VERS_KO")
     public Long getIdSessioneVersKo() {
-	return this.idSessioneVersKo;
+        return this.idSessioneVersKo;
     }
 
     @Column(name = "AA_KEY_UNITA_DOC")
     public BigDecimal getAaKeyUnitaDoc() {
-	return this.aaKeyUnitaDoc;
+        return this.aaKeyUnitaDoc;
     }
 
     @Column(name = "CD_ERR_PRINC")
     public String getCdErrPrinc() {
-	return this.cdErrPrinc;
+        return this.cdErrPrinc;
     }
 
     @Column(name = "CD_KEY_UNITA_DOC")
     public String getCdKeyUnitaDoc() {
-	return this.cdKeyUnitaDoc;
+        return this.cdKeyUnitaDoc;
     }
 
     @Column(name = "CD_REGISTRO_KEY_UNITA_DOC")
     public String getCdRegistroKeyUnitaDoc() {
-	return this.cdRegistroKeyUnitaDoc;
+        return this.cdRegistroKeyUnitaDoc;
     }
 
     @Column(name = "DT_CHIUSURA")
     public LocalDateTime getDtChiusura() {
-	return this.dtChiusura;
+        return this.dtChiusura;
     }
 
     @Column(name = "TI_SESSIONE_VERS")
     public String getTiSessioneVers() {
-	return this.tiSessioneVers;
+        return this.tiSessioneVers;
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ID_STRUT")
     public OrgStrut getOrgStrut() {
-	return this.orgStrut;
+        return this.orgStrut;
     }
 
 }

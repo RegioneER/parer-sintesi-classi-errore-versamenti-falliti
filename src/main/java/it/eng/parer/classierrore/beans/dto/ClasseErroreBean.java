@@ -32,37 +32,37 @@ public class ClasseErroreBean implements Serializable {
     private LocalDateTime dtLastSesErr;
 
     public ClasseErroreBean() {
-	super();
+        super();
     }
 
     public ClasseErroreBean(String cdRegistroKeyUnitaDoc, BigDecimal aaKeyUnitaDoc,
-	    String cdKeyUnitaDoc, String clErrLast, LocalDateTime dtLastSesErr) {
-	super();
-	this.cdRegistroKeyUnitaDoc = cdRegistroKeyUnitaDoc;
-	this.aaKeyUnitaDoc = aaKeyUnitaDoc;
-	this.cdKeyUnitaDoc = cdKeyUnitaDoc;
-	this.clErrLast = clErrLast;
-	this.dtLastSesErr = dtLastSesErr;
+            String cdKeyUnitaDoc, String clErrLast, LocalDateTime dtLastSesErr) {
+        super();
+        this.cdRegistroKeyUnitaDoc = cdRegistroKeyUnitaDoc;
+        this.aaKeyUnitaDoc = aaKeyUnitaDoc;
+        this.cdKeyUnitaDoc = cdKeyUnitaDoc;
+        this.clErrLast = clErrLast;
+        this.dtLastSesErr = dtLastSesErr;
     }
 
     public String getCdRegistroKeyUnitaDoc() {
-	return cdRegistroKeyUnitaDoc;
+        return cdRegistroKeyUnitaDoc;
     }
 
     public BigDecimal getAaKeyUnitaDoc() {
-	return aaKeyUnitaDoc;
+        return aaKeyUnitaDoc;
     }
 
     public String getCdKeyUnitaDoc() {
-	return cdKeyUnitaDoc;
+        return cdKeyUnitaDoc;
     }
 
     public String getClErrLast() {
-	return clErrLast;
+        return clErrLast;
     }
 
     public LocalDateTime getDtLastSesErr() {
-	return dtLastSesErr;
+        return dtLastSesErr;
     }
 
 }

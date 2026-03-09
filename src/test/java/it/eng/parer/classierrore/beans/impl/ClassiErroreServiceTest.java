@@ -49,13 +49,13 @@ class ClassiErroreServiceTest {
      */
     @Test
     void listClassiErrorePerVarsFalliti_utenteAbilitato_ok() {
-	ClassiErroreResponse response = assertDoesNotThrow(
-		() -> service.listClassiErrorePerVarsFalliti(USERID, NM_AMBIENTE, NM_ENTE, NM_STRUT,
-			StringUtils.EMPTY));
-	assertNotNull(response);
-	assertEquals(NM_AMBIENTE + " / " + NM_ENTE + " / " + NM_STRUT, response.getStruttura());
-	assertTrue(response.getTotale() >= 0);
-	assertNotNull(response.getClassiErrore());
+        ClassiErroreResponse response = assertDoesNotThrow(
+                () -> service.listClassiErrorePerVarsFalliti(USERID, NM_AMBIENTE, NM_ENTE, NM_STRUT,
+                        StringUtils.EMPTY));
+        assertNotNull(response);
+        assertEquals(NM_AMBIENTE + " / " + NM_ENTE + " / " + NM_STRUT, response.getStruttura());
+        assertTrue(response.getTotale() >= 0);
+        assertNotNull(response.getClassiErrore());
     }
 
     /*
@@ -63,13 +63,13 @@ class ClassiErroreServiceTest {
      */
     @Test
     void listClassiErrorePerVarsFalliti_utenteNonAbilitato_ok() {
-	ClassiErroreResponse response = assertDoesNotThrow(
-		() -> service.listClassiErrorePerVarsFalliti(FAKE_USERID, NM_AMBIENTE, NM_ENTE,
-			NM_STRUT, StringUtils.EMPTY));
-	assertNotNull(response);
-	assertEquals(NM_AMBIENTE + " / " + NM_ENTE + " / " + NM_STRUT, response.getStruttura());
-	assertEquals(0, response.getTotale());
-	assertTrue(response.getClassiErrore().isEmpty());
+        ClassiErroreResponse response = assertDoesNotThrow(
+                () -> service.listClassiErrorePerVarsFalliti(FAKE_USERID, NM_AMBIENTE, NM_ENTE,
+                        NM_STRUT, StringUtils.EMPTY));
+        assertNotNull(response);
+        assertEquals(NM_AMBIENTE + " / " + NM_ENTE + " / " + NM_STRUT, response.getStruttura());
+        assertEquals(0, response.getTotale());
+        assertTrue(response.getClassiErrore().isEmpty());
     }
 
     /*
@@ -77,9 +77,9 @@ class ClassiErroreServiceTest {
      */
     @Test
     void listClassiErrorePerVarsFallitiEmptyUserid_ko() {
-	assertThrows(ConstraintViolationException.class,
-		() -> service.listClassiErrorePerVarsFalliti(StringUtils.EMPTY, null, null, null,
-			StringUtils.EMPTY));
+        assertThrows(ConstraintViolationException.class,
+                () -> service.listClassiErrorePerVarsFalliti(StringUtils.EMPTY, null, null, null,
+                        StringUtils.EMPTY));
     }
 
     /*
@@ -87,10 +87,10 @@ class ClassiErroreServiceTest {
      */
     @Test
     void listClassiErrorePerVarsFalliti_strutturaNonEsistente_ok() {
-	ClassiErroreResponse response = assertDoesNotThrow(
-		() -> service.listClassiErrorePerVarsFalliti(USERID, NM_AMBIENTE, NM_ENTE,
-			FAKE_NM_STRUT, StringUtils.EMPTY));
-	assertTrue(response.getClassiErrore().isEmpty());
+        ClassiErroreResponse response = assertDoesNotThrow(
+                () -> service.listClassiErrorePerVarsFalliti(USERID, NM_AMBIENTE, NM_ENTE,
+                        FAKE_NM_STRUT, StringUtils.EMPTY));
+        assertTrue(response.getClassiErrore().isEmpty());
     }
 
 }

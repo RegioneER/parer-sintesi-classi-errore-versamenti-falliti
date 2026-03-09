@@ -31,7 +31,7 @@ public interface IClassiErroreService {
      * @return la response decorata (vedi {@link ClassiErroreResponse})
      */
     ClassiErroreResponse listClassiErrorePerVarsFalliti(
-	    @NotBlank(message = "userId non valorizzato") String userId, String nmAmbiente,
-	    String nmEnte, String nmStrut, String uri);
+            @NotBlank(message = "userId non valorizzato") String userId, String nmAmbiente,
+            String nmEnte, String nmStrut, String uri);
 
 }

@@ -45,30 +45,30 @@ public class OrgEnte implements Serializable {
     private List<OrgStrut> orgStruts = new ArrayList<>();
 
     public OrgEnte() {
-	// hibernate
+        // hibernate
     }
 
     @Id
     @Column(name = "ID_ENTE")
     public Long getIdEnte() {
-	return this.idEnte;
+        return this.idEnte;
     }
 
     @Column(name = "NM_ENTE")
     public String getNmEnte() {
-	return this.nmEnte;
+        return this.nmEnte;
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ID_AMBIENTE")
     public OrgAmbiente getOrgAmbiente() {
-	return this.orgAmbiente;
+        return this.orgAmbiente;
     }
 
     @OneToMany(mappedBy = "orgEnte")
     @XmlTransient
     public List<OrgStrut> getOrgStruts() {
-	return this.orgStruts;
+        return this.orgStruts;
     }
 
 }

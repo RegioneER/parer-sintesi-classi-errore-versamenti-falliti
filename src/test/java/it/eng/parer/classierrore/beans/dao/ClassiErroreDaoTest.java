@@ -38,7 +38,7 @@ class ClassiErroreDaoTest {
     static final String NM_ENTE = "ente_test"; // ente locale al db snap/test
     static final String NM_STRUT = "PARER_TEST"; // struttura locale al db snap/test
     static final String FAKE_NM_STRUT = "struttura_non_esistente"; // struttura locale al db
-								   // snap/test
+    // snap/test
     static final String FAKE_USERID = "user_non_esistente";
 
     @Inject
@@ -49,12 +49,12 @@ class ClassiErroreDaoTest {
      */
     @Test
     void findCodiciErrorePerVersFalliti_ok() {
-	assertDoesNotThrow(
-		() -> dao.findCodiciErrorePerVersFalliti(NM_AMBIENTE, NM_ENTE, NM_STRUT));
-	List<CodiceErroreBean> resultList = dao
-		.findCodiciErrorePerVersFalliti(NM_AMBIENTE, NM_ENTE, NM_STRUT)
-		.collect(Collectors.toList());
-	assertNotNull(resultList);
+        assertDoesNotThrow(
+                () -> dao.findCodiciErrorePerVersFalliti(NM_AMBIENTE, NM_ENTE, NM_STRUT));
+        List<CodiceErroreBean> resultList = dao
+                .findCodiciErrorePerVersFalliti(NM_AMBIENTE, NM_ENTE, NM_STRUT)
+                .collect(Collectors.toList());
+        assertNotNull(resultList);
     }
 
     /*
@@ -62,11 +62,11 @@ class ClassiErroreDaoTest {
      */
     @Test
     void findCodiciErrorePerVersFalliti_emptyResult() {
-	List<CodiceErroreBean> resultList = dao
-		.findCodiciErrorePerVersFalliti(NM_AMBIENTE, NM_ENTE, FAKE_NM_STRUT)
-		.collect(Collectors.toList());
-	assertNotNull(resultList);
-	assertTrue(resultList.isEmpty());
+        List<CodiceErroreBean> resultList = dao
+                .findCodiciErrorePerVersFalliti(NM_AMBIENTE, NM_ENTE, FAKE_NM_STRUT)
+                .collect(Collectors.toList());
+        assertNotNull(resultList);
+        assertTrue(resultList.isEmpty());
     }
 
     /*
@@ -74,9 +74,9 @@ class ClassiErroreDaoTest {
      */
     @Test
     void isUtenteAbilitatoStrut_ok() {
-	boolean result = assertDoesNotThrow(
-		() -> dao.isUtenteAbilitatoStrut(USERID, NM_AMBIENTE, NM_ENTE, NM_STRUT));
-	assertTrue(result);
+        boolean result = assertDoesNotThrow(
+                () -> dao.isUtenteAbilitatoStrut(USERID, NM_AMBIENTE, NM_ENTE, NM_STRUT));
+        assertTrue(result);
     }
 
     /*
@@ -84,9 +84,9 @@ class ClassiErroreDaoTest {
      */
     @Test
     void isUtenteAbilitatoStrut_notAbilitato() {
-	boolean result = assertDoesNotThrow(
-		() -> dao.isUtenteAbilitatoStrut(FAKE_USERID, NM_AMBIENTE, NM_ENTE, NM_STRUT));
-	assertFalse(result);
+        boolean result = assertDoesNotThrow(
+                () -> dao.isUtenteAbilitatoStrut(FAKE_USERID, NM_AMBIENTE, NM_ENTE, NM_STRUT));
+        assertFalse(result);
     }
 
     /*
@@ -94,9 +94,9 @@ class ClassiErroreDaoTest {
      */
     @Test
     void isUtenteAbilitatoStrut_strutturaNonEsistente() {
-	boolean result = assertDoesNotThrow(
-		() -> dao.isUtenteAbilitatoStrut(USERID, NM_AMBIENTE, NM_ENTE, FAKE_NM_STRUT));
-	assertFalse(result);
+        boolean result = assertDoesNotThrow(
+                () -> dao.isUtenteAbilitatoStrut(USERID, NM_AMBIENTE, NM_ENTE, FAKE_NM_STRUT));
+        assertFalse(result);
     }
 
 }
