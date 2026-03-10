@@ -9,7 +9,7 @@ jobs:
   call-wf-template:
     uses: RegioneER/parer-github-template/.github/workflows/wf-template.yml@v2
     with:
-      java: '21'
+      java: '11'
       publiccode-file: 'publiccode.yml'
       run-publiccode-validation: true
     secrets:
