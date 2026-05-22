@@ -14,4 +14,3 @@ jobs:
       run-publiccode-validation: true
     secrets:
       CI_PARERWORKER_RW_TOKEN: ${{ secrets.CI_PARERWORKER_RW_TOKEN }}
-
